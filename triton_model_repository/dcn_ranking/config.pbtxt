@@ -1,0 +1,30 @@
+
+name: "dcn_ranking"
+platform: "tensorflow_savedmodel"
+max_batch_size: 0
+input [
+  {
+    name: "movie_id"
+    data_type: TYPE_STRING
+    dims: []
+  },
+  {
+    name: "user_id"
+    data_type: TYPE_STRING
+    dims: []
+  }
+]
+
+output [
+  {
+    name: "dense_4"
+    data_type: TYPE_FP32
+    dims: [1]
+  }
+]
+
+instance_group [
+  {
+    kind: KIND_CPU
+  }
+]

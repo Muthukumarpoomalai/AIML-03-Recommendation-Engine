@@ -1,0 +1,40 @@
+
+# Virtual environments
+.venv/
+.venv311/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Dataset files
+data/
+*.csv
+*.parquet
+*.xlsx
+
+# Trained model artifacts
+models/
+*.keras
+*.h5
+*.faiss
+*.pb
+
+# Triton generated model files
+triton_model_repository/*/1/model.savedmodel/
+
+# Airflow logs
+airflow/logs/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

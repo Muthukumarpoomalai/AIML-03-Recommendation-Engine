@@ -1,0 +1,16 @@
+{
+    "evaluation_type": "Warm-start",
+    "sampled_users": 100,
+    "users_evaluated": 95,
+    "retrieval_candidates": 1000,
+    "reranking_candidates": 100,
+    "top_k": 10,
+    "candidate_recall_at_1000": 0.186325,
+    "faiss_retrieval_recall_at_10": 0.019557,
+    "faiss_retrieval_ndcg_at_10": 0.026232,
+    "dcn_final_recall_at_10": 0.010428,
+    "dcn_final_ndcg_at_10": 0.035931,
+    "relevant_rating_threshold": 4.0,
+    "retrieval_model": "Two-Tower + FAISS",
+    "ranking_model": "DCN via NVIDIA Triton"
+}
